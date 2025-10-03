@@ -1,0 +1,596 @@
+/* ---------- Root variables ---------- */
+:root {
+  --bg: #0b0b0d;
+  --panel: #111216;
+  --text: #f2f3f6;
+  --muted: #a7adb8;
+  --stroke: #1e2128;
+  --brand: #ffd400;
+  /* Yellow accent */
+  --brand-2: #ffea80;
+  /* Soft yellow for hover */
+  --container: 1200px;
+  --radius: 18px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, .35);
+}
+
+/* ---------- Base reset ---------- */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, 'Tajawal';
+  color: var(--text);
+  background: radial-gradient(900px 600px at 90% -10%, rgba(255, 212, 0, .12), transparent 60%), var(--bg);
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: var(--container);
+  margin-inline: auto;
+  padding: 20px 20px;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 18px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.btn.small {
+  padding: 8px 12px;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background: var(--brand);
+  color: #030303;
+  box-shadow: 0 6px 14px rgba(255, 212, 0, .25);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--stroke);
+}
+
+.btn-cta {
+  background: transparent;
+  border: 1px solid var(--brand);
+  color: var(--brand);
+}
+
+/* ---------- Navbar ---------- */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(11, 11, 13, .75);
+  backdrop-filter: saturate(120%) blur(10px);
+  border-bottom: 1px solid var(--stroke);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 900;
+  letter-spacing: .3px;
+}
+
+.logo-mark {
+  width: 50px;
+  height: 50px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--text);
+  opacity: .85;
+  font-weight: 700;
+}
+
+.nav-links a:hover {
+  opacity: 1;
+}
+
+.mobile-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: var(--text);
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* ---------- Hero Section ---------- */
+.hero {
+  padding: 70px 0 40px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 36px;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 56px;
+  line-height: 1.05;
+  margin: 12px 0 16px;
+  letter-spacing: -.02em;
+}
+
+.accent {
+  color: var(--brand);
+}
+
+.lead {
+  color: #dce0e8;
+  font-size: 18px;
+  max-width: 60ch;
+}
+
+/* CTA buttons inside Hero */
+.cta-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 22px;
+}
+
+.hero-image {
+  position: relative;
+  background: var(--panel);
+  border: 1px solid var(--stroke);
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: .95;
+  filter: grayscale(100%);
+}
+
+.hero-image .badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--brand);
+  color: #000;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-weight: 900;
+}
+
+.stats {
+  display: flex;
+  gap: 26px;
+  align-items: center;
+  margin-top: 22px;
+  padding: 0;
+  list-style: none;
+}
+
+.stats .num {
+  display: block;
+  font-weight: 900;
+  font-size: 28px;
+}
+
+.stats .label {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* ---------- Trust ticker ---------- */
+.trust {
+  border-top: 1px solid var(--stroke);
+  border-bottom: 1px solid var(--stroke);
+  padding: 10px 0;
+  background: linear-gradient(180deg, rgba(255, 212, 0, .06), rgba(255, 212, 0, .02));
+}
+
+.ticker {
+  overflow: hidden;
+}
+
+.tape {
+  display: inline-flex;
+  gap: 40px;
+  white-space: nowrap;
+  animation: marquee 18s linear infinite;
+  color: #111;
+  background: var(--brand);
+  padding: 8px 16px;
+  border-radius: 999px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ---------- Services Section ---------- */
+.section {
+  padding: 70px 0;
+}
+
+.section-head .kicker {
+  color: var(--brand);
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.section h2 {
+  font-size: 34px;
+  margin: 6px 0 14px;
+}
+
+.cards {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--stroke);
+  border-radius: 20px;
+  padding: 20px;
+  transition: transform .25s ease, border-color .25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: #2c2f37;
+}
+
+.icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: #1a1b20;
+  border: 1px solid var(--stroke);
+}
+
+.more {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  color: var(--brand);
+  font-weight: 800;
+}
+
+/* ---------- Projects Section ---------- */
+.project-grid {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.shot {
+  position: relative;
+  background: var(--panel);
+  border: 1px solid var(--stroke);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.shot img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+.shot-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+}
+
+.pill {
+  border: 1px solid var(--brand);
+  color: var(--brand);
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+/* ---------- Testimonials Section ---------- */
+.quotes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.quote {
+  background: var(--panel);
+  border: 1px solid var(--stroke);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+blockquote {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* ---------- CTA Section (Contact) ---------- */
+.cta-section {
+  padding: 20px 0 70px;
+}
+
+.cta-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  background: var(--panel);
+  border: 1px solid var(--stroke);
+  border-radius: 22px;
+  padding: 40px 24px;
+}
+
+.cta-form {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Center the submit button */
+.cta-form .field {
+  display: flex;
+  justify-content: center;
+  /* center horizontally */
+  margin-top: 10px;
+}
+
+.cta-form button {
+  min-width: 160px;
+  /* optional: gives the button a nice width */
+}
+
+/* Style for the note under the button */
+.cta-form small {
+  display: block;
+  /* make it take full line */
+  margin-top: 12px;
+  /* space between button and note text */
+  font-size: 13px;
+  /* smaller font size for note */
+  color: var(--muted);
+  /* use muted color */
+  text-align: center;
+  /* center align under the button */
+}
+
+
+
+/* Two-column layout for name fields */
+.field.two-cols {
+  display: flex;
+  gap: 12px;
+}
+
+.cta-form input,
+.cta-form textarea {
+  width: 100%;
+  margin-bottom: 12px;
+  background: #0f1015;
+  border: 1px solid #22252e;
+  border-radius: 12px;
+  color: var(--text);
+  padding: 12px 14px;
+  font-family: inherit;
+  font-size: 15px;
+  resize: vertical;
+}
+
+.field.two-cols .col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.field {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+input[type="email"] {
+  flex: 1;
+  background: #0f1015;
+  border: 1px solid #22252e;
+  border-radius: 12px;
+  color: var(--text);
+  padding: 12px 14px;
+}
+
+label {
+  display: block;
+  margin-top: 6px;
+  margin-bottom: 4px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* ---------- Footer Section ---------- */
+.footer {
+  border-top: 1px solid var(--stroke);
+  padding-top: 30px;
+  color: var(--muted);
+  background: linear-gradient(180deg, rgba(255, 212, 0, .04), transparent);
+}
+
+.foot-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.copy {
+  text-align: center;
+  color: #8e94a3;
+  padding: 18px 0;
+  border-top: 1px solid var(--stroke);
+  margin-top: 16px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width:1024px) {
+  .container {
+    padding: 20px 32px;
+  }
+
+  .section-head {
+    padding: 15px 0;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .foot-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width:640px) {
+  .container {
+    padding: 20px 18px;
+  }
+
+  .section-head {
+    padding: 15px 0;
+  }
+
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .field.two-cols {
+    flex-direction: column;
+  }
+
+  .project-grid,
+  .cards,
+  .quotes {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: block;
+  }
+
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    position: absolute;
+    top: 68px;
+    inset-inline: 0;
+    background: rgba(11, 11, 13, .98);
+    border-bottom: 1px solid var(--stroke);
+    padding: 14px 20px;
+  }
+
+  .foot-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- RTL Support ---------- */
+body.rtl {
+  direction: rtl;
+}
+
+body.rtl .brand-name {
+  margin-right: 0;
+}
+
+body.rtl .cta-buttons,
+body.rtl .stats {
+  flex-direction: row-reverse;
+}
+
+body.rtl .project-grid,
+body.rtl .cards,
+body.rtl .quotes {
+  direction: rtl;
+}

@@ -1,0 +1,117 @@
+const dict = {
+  en: {
+    "nav.services": "Services",
+    "nav.projects": "Projects",
+    "nav.testimonials": "Testimonials",
+    "nav.contact": "Contact",
+    "nav.cta": "Contact Us",
+
+    "hero.head1": "WE PROVIDE",
+    "hero.head2": "NETWORK & SECURITY",
+    "hero.head3": "SOLUTIONS.",
+    "hero.sub": "Professional services in network installation, security systems, and modern website development.",
+    "hero.getStarted": "Get Started",
+    "hero.viewWork": "View Work",
+    "hero.exp": "Years of Experience",
+    "hero.networks": "Networks Installed",
+    "hero.websites": "Websites Delivered",
+
+    "services.kicker": "Our Services",
+    "services.title": "WHAT DO WE PROVIDE?",
+    "services.card1.title": "Network Installation",
+    "services.card1.text": "Setup and configuration of reliable network infrastructure for companies and organizations.",
+    "services.card2.title": "Security Solutions",
+    "services.card2.text": "Advanced security systems to protect your business, data, and IT infrastructure.",
+    "services.card3.title": "Website Development",
+    "services.card3.text": "Custom responsive websites, designed for growth and optimized for performance.",
+    "services.learn": "Learn more →",
+
+    "projects.kicker": "Our recent work",
+    "projects.title": "PROJECTS WE DID",
+    "projects.view": "View",
+    "projects.p1.title": "Office Networking Setup",
+    "projects.p2.title": "Security System Installation",
+    "projects.p3.title": "Corporate Website",
+
+    "test.kicker": "What clients say",
+    "test.title": "TESTIMONIALS",
+    "test.q1": "“They installed our office network flawlessly, secure and fast.”",
+    "test.q2": "“Our new website and security system exceeded expectations.”",
+
+    "cta.title": "Let’s secure your business together.",
+    "cta.sub": "From networking to security and websites, we deliver complete solutions tailored to your needs.",
+
+    "form.firstName": "First Name",
+    "form.lastName": "Last Name",
+    "form.email": "Work Email",
+    "form.message": "Message",
+    "form.send": "Send Message",
+    "form.note": "We reply within 24 hours. No spam.",
+
+    "footer.about": "We provide professional services in networking, security solutions, and website development.",
+    "footer.company": "Company",
+    "footer.resources": "Resources",
+    "footer.contact": "Contact",
+    "footer.blog": "Blog",
+    "footer.guides": "Guides",
+    "footer.careers": "Careers"
+  },
+
+  ar: {
+    "nav.services": "الخدمات",
+    "nav.projects": "المشاريع",
+    "nav.testimonials": "آراء العملاء",
+    "nav.contact": "تواصل",
+    "nav.cta": "اتصل بنا",
+
+    "hero.head1": "نحن نقدم",
+    "hero.head2": "حلول الشبكات ",
+    "hero.head3": "والأمن",
+    "hero.sub": "خدمات احترافية في تركيب الشبكات، أنظمة الحماية، وتطوير المواقع الحديثة.",
+    "hero.getStarted": "ابدأ الآن",
+    "hero.viewWork": "شاهد أعمالنا",
+    "hero.exp": "سنوات خبرة",
+    "hero.networks": "شبكات تم تركيبها",
+    "hero.websites": "مواقع تم تسليمها",
+
+    "services.kicker": "خدماتنا",
+    "services.title": "ماذا نقدم لكم؟",
+    "services.card1.title": "تركيب الشبكات",
+    "services.card1.text": "إعداد وتكوين بنية تحتية موثوقة للشركات والمؤسسات.",
+    "services.card2.title": "حلول الأمن والحماية",
+    "services.card2.text": "أنظمة أمن متقدمة لحماية عملك وبياناتك.",
+    "services.card3.title": "تطوير المواقع",
+    "services.card3.text": "مواقع متجاوبة مخصصة للنمو والأداء.",
+    "services.learn": "اعرف المزيد →",
+
+    "projects.kicker": "آخر أعمالنا",
+    "projects.title": "المشاريع التي أنجزناها",
+    "projects.view": "عرض",
+    "projects.p1.title": "تركيب شبكة مكتبية",
+    "projects.p2.title": "تركيب نظام أمني",
+    "projects.p3.title": "موقع شركة",
+
+    "test.kicker": "ماذا يقول العملاء",
+    "test.title": "شهادات العملاء",
+    "test.q1": "“ركبوا شبكة مكتبنا باحترافية، سريعة وآمنة.”",
+    "test.q2": "“موقعنا الجديد ونظام الحماية فاق التوقعات.”",
+
+    "cta.title": "لنؤمّن أعمالك معًا",
+    "cta.sub": "من الشبكات إلى الحماية والمواقع، نقدم حلول متكاملة مخصصة لاحتياجاتك.",
+
+    "form.firstName": "الاسم الأول",
+    "form.lastName": "اسم العائلة",
+    "form.email": "البريد الإلكتروني",
+    "form.message": "رسالتك",
+    "form.send": "أرسل الرسالة",
+    "form.note": "نرد خلال 24 ساعة. بدون إزعاج.",
+
+    "footer.about": "نقدم خدمات احترافية في تركيب الشبكات، حلول الأمن، وتطوير المواقع.",
+    "footer.company": "الشركة",
+    "footer.resources": "الموارد",
+    "footer.contact": "تواصل",
+    "footer.blog": "مدونة",
+    "footer.guides": "أدلة",
+    "footer.careers": "وظائف"
+  }
+};
