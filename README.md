@@ -12,6 +12,7 @@ This project is fully bilingual (**English / Arabic**) with an interactive langu
 - Contact form integrated with [Formspree](https://formspree.io).
 - Clean HTML, CSS, and JavaScript structure.
 - RTL (Right-to-Left) support when switching to Arabic.
+- Modern hover effects (buttons glow yellow, cards highlight on hover).
 
 ---
 
@@ -24,3 +25,18 @@ This project is fully bilingual (**English / Arabic**) with an interactive langu
 ---
 
 ## 📂 Project Structure
+project/
+│── index.html
+│── css/
+│ └── styles.css
+│── js/
+│ ├── i18n.js
+│ └── main.js
+└── assets/
+├── icons/
+│ └── logo.svg
+└── images/
+├── hero.jpg
+├── p1.webp
+├── p2.webp
+├── p3.webp
