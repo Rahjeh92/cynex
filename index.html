@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CYNEX</title>
   <meta name="description"
-    content="We provide professional networking installation, security solutions, and modern website development." />
+    content="CYNEX provides professional Networking, Security Systems, Smart Home, IT Services, and IP Telephony." />
   <link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,22 +18,33 @@
 
 <body>
   <!-- ========== NAVBAR ========== -->
-  <nav class="nav">
+  <nav class="navbar">
     <div class="container nav-inner">
+
+      <!-- Brand / Logo -->
       <a class="brand" href="#home" aria-label="CYNEX home">
         <img src="assets/icons/logo.svg" alt="CYNEX" class="logo-mark" />
         <span class="brand-name">CYNEX</span>
       </a>
 
+      <!-- Mobile Toggle (hamburger menu) -->
       <button class="mobile-toggle" aria-label="Toggle menu">☰</button>
+
+      <!-- Navigation Links -->
       <div class="nav-links">
-        <a href="#services" data-i18n="nav.services">Services</a>
-        <a href="#projects" data-i18n="nav.projects">Projects</a>
-        <a href="#testimonials" data-i18n="nav.testimonials">Testimonials</a>
-        <a href="#contact" data-i18n="nav.contact">Contact</a>
-        <button id="langBtn" class="btn btn-ghost small">عربي</button>
-        <a class="btn btn-cta" href="#contact" data-i18n="nav.cta">Contact Us</a>
+        <a href="#services"><span data-i18n="nav.services">Services</span></a>
+        <a href="#projects"><span data-i18n="nav.projects">Projects</span></a>
+        <a href="#testimonials"><span data-i18n="nav.testimonials">Testimonials</span></a>
+        <a href="#about"><span data-i18n="nav.about">About</span></a>
+        <a href="#contact"><span data-i18n="nav.contact">Contact</span></a>
       </div>
+
+      <!-- Language Switch Button -->
+      <button id="langBtn" class="btn btn-ghost small">عربي</button>
+
+      <!-- Call to Action Button -->
+      <a class="cta-btn" href="#contact" data-i18n="nav.cta">Contact Us</a>
+    </div>
     </div>
   </nav>
 
@@ -42,29 +53,23 @@
     <div class="hero-grid">
       <div class="hero-copy">
         <h1 class="hero-title">
-          <span data-i18n="hero.head1">WE PROVIDE</span>
-          <span class="accent" data-i18n="hero.head2">NETWORK & SECURITY</span>
-          <span data-i18n="hero.head3">SOLUTIONS.</span>
+          <span data-i18n="hero.head1">WELCOME TO</span>
+          <span class="accent" data-i18n="hero.head2">CYNEX</span>
+          <span data-i18n="hero.head3">CONNECTED • PROTECTED • AUTOMATED</span>
         </h1>
         <p class="lead" data-i18n="hero.sub">
-          Professional services in network installation, security systems, and modern website development.
+          CYNEX is a Kuwait-based technology company specialized in Networking & Cabling, Security Systems,
+          Smart Home Automation, IT Infrastructure, and IP Telephony.
+          We deliver innovative, reliable, and cost-effective solutions tailored to your needs.
         </p>
         <div class="cta-buttons">
           <a class="btn btn-primary" href="#contact" data-i18n="hero.getStarted">Get Started</a>
           <a class="btn btn-ghost" href="#projects" data-i18n="hero.viewWork">View Work</a>
         </div>
-
-        <ul class="stats">
-          <li><span class="num">10+</span><span class="label" data-i18n="hero.exp">Years of Experience</span></li>
-          <li><span class="num">200+</span><span class="label" data-i18n="hero.networks">Networks Installed</span></li>
-          <li><span class="num">150+</span><span class="label" data-i18n="hero.websites">Websites Delivered</span></li>
-        </ul>
       </div>
-
       <aside class="hero-media">
         <div class="hero-image">
-          <img src="assets/images/hero.jpg" alt="Networking & Security Team" />
-          <div class="badge">★</div>
+          <img src="assets/images/hero.webp" alt="Networking & Security Team" />
         </div>
       </aside>
     </div>
@@ -79,25 +84,57 @@
     <div class="cards">
       <article class="card">
         <div class="icon">🌐</div>
-        <h3 data-i18n="services.card1.title">Network Installation</h3>
-        <p data-i18n="services.card1.text">Setup and configuration of reliable network infrastructure for companies and
-          organizations.</p>
-        <a href="#" class="more" data-i18n="services.learn">Learn more →</a>
+        <h3 data-i18n="services.card1.title">Networking & Infrastructure</h3>
+        <p data-i18n="services.card1.text">
+          Full design, installation, and maintenance of structured cabling, LAN/WAN, Wi-Fi optimization,
+          and data-center wiring for reliable enterprise networks.
+        </p>
       </article>
       <article class="card">
         <div class="icon">🔒</div>
-        <h3 data-i18n="services.card2.title">Security Solutions</h3>
-        <p data-i18n="services.card2.text">Advanced security systems to protect your business, data, and IT
-          infrastructure.</p>
-        <a href="#" class="more" data-i18n="services.learn">Learn more →</a>
+        <h3 data-i18n="services.card2.title">Security Systems</h3>
+        <p data-i18n="services.card2.text">
+          CCTV & video surveillance, access control, intrusion alarms, and integrated monitoring to protect
+          your people and assets.
+        </p>
+      </article>
+      <article class="card">
+        <div class="icon">🏠</div>
+        <h3 data-i18n="services.card3.title">Smart Home Solutions</h3>
+        <p data-i18n="services.card3.text">
+          Intelligent lighting and climate control with voice/app integration, remote management, and
+          energy-efficient comfort.
+        </p>
       </article>
       <article class="card">
         <div class="icon">💻</div>
-        <h3 data-i18n="services.card3.title">Website Development</h3>
-        <p data-i18n="services.card3.text">Custom responsive websites, designed for growth and optimized for
-          performance.</p>
-        <a href="#" class="more" data-i18n="services.learn">Learn more →</a>
+        <h3 data-i18n="services.card4.title">IT Infrastructure</h3>
+        <p data-i18n="services.card4.text">
+          Routers, switches, firewalls, system integration, upgrades, optimizations, and long-term
+          technical support contracts.
+        </p>
       </article>
+      <article class="card">
+        <div class="icon">📞</div>
+        <h3 data-i18n="services.card5.title">IP Telephony & Communication</h3>
+        <p data-i18n="services.card5.text">
+          IP PBX, VoIP setup & configuration, call manager, and unified communication solutions for seamless
+          business operations.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ========== WHY CHOOSE US ========== -->
+  <section id="why" class="section container">
+    <div class="why-box">
+      <h2 data-i18n="why.title">Why Choose Us</h2>
+      <ul class="why-list">
+        <li data-i18n="why.point1">Experienced and certified team of professionals</li>
+        <li data-i18n="why.point2">Customized solutions tailored to client needs</li>
+        <li data-i18n="why.point3">High-quality equipment and latest technologies</li>
+        <li data-i18n="why.point4">Strong customer support and after-sales service</li>
+      </ul>
     </div>
   </section>
 
@@ -109,24 +146,21 @@
     </div>
     <div class="project-grid">
       <article class="shot">
-        <img src="assets/images/p1.jpg" alt="Office Networking">
+        <img src="assets/images/p1.webp" alt="Office Networking">
         <div class="shot-meta">
           <h4 data-i18n="projects.p1.title">Office Networking Setup</h4>
-          <a href="#" class="pill" data-i18n="projects.view">View</a>
         </div>
       </article>
       <article class="shot">
-        <img src="assets/images/p2.jpg" alt="Security System">
+        <img src="assets/images/p2.webp" alt="Security System">
         <div class="shot-meta">
           <h4 data-i18n="projects.p2.title">Security System Installation</h4>
-          <a href="#" class="pill" data-i18n="projects.view">View</a>
         </div>
       </article>
       <article class="shot">
-        <img src="assets/images/p3.jpg" alt="Website Project">
+        <img src="assets/images/p3.webp" alt="Website Project">
         <div class="shot-meta">
           <h4 data-i18n="projects.p3.title">Corporate Website</h4>
-          <a href="#" class="pill" data-i18n="projects.view">View</a>
         </div>
       </article>
     </div>
@@ -140,39 +174,80 @@
     </div>
     <div class="quotes">
       <figure class="quote">
-        <blockquote data-i18n="test.q1">“They installed our office network flawlessly, secure and fast.”</blockquote>
-        <figcaption>— Lina M.</figcaption>
+        <blockquote data-i18n="test.q1">“CYNEX delivered our office network with excellent uptime and reliable support.”
+        </blockquote>
+        <figcaption>— Client A</figcaption>
       </figure>
       <figure class="quote">
-        <blockquote data-i18n="test.q2">“Our new website and security system exceeded expectations.”</blockquote>
-        <figcaption>— Omar A.</figcaption>
+        <blockquote data-i18n="test.q2">“Professional team and outstanding security system installation.”</blockquote>
+        <figcaption>— Client B</figcaption>
       </figure>
     </div>
   </section>
 
-  <!-- ========== CTA ========== -->
+  <!-- ========== MISSION & VISION ========== -->
+  <section id="mission-vision" class="section container">
+    <div class="mv-grid">
+      <div class="info-box">
+        <h2 data-i18n="mission.title">Our Mission</h2>
+        <p data-i18n="mission.text">
+          To deliver innovative and reliable technology solutions that meet the highest standards of
+          quality, efficiency, and customer satisfaction.
+        </p>
+      </div>
+      <div class="info-box">
+        <h2 data-i18n="vision.title">Our Vision</h2>
+        <p data-i18n="vision.text">
+          To be a trusted leader in technology integration in Kuwait and the region, known for
+          excellence, innovation, and commitment.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT US ========== -->
+  <section id="about" class="section container">
+    <div class="info-box">
+      <h2 data-i18n="about.title">About Us</h2>
+      <p data-i18n="about.text">
+        CYNEX is a professional technology company based in Kuwait. We provide end-to-end solutions across Networking,
+        Security, Smart Home, IT, and Telephony. Our goal is to connect, protect, and automate businesses and homes
+        with the latest innovations.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
   <section id="contact" class="cta-section container">
     <div class="cta-box">
       <div>
         <h3 data-i18n="cta.title">Let’s secure your business together.</h3>
-        <p class="muted" data-i18n="cta.sub">From networking to security and websites, we deliver complete solutions
-          tailored to your needs.</p>
+        <p class="muted" data-i18n="cta.sub">
+          From networking to security, smart home, IT, and IP telephony — we deliver complete, reliable,
+          and scalable solutions.
+        </p>
+        <ul class="links">
+          <li><strong>Address:</strong> Al Saqran Tower, Hawally, Floor 1, Office No. 3</li>
+          <li><strong>Phone:</strong> +965 50503025</li>
+          <li><strong>Website:</strong> <a href="https://www.cynex.pro" target="_blank">cynex.pro</a></li>
+          <li><strong>Email:</strong> <a href="mailto:info@cynex.pro">info@cynex.pro</a></li>
+        </ul>
       </div>
       <form class="cta-form" id="contactForm" action="https://formspree.io/f/xyzabcd" method="POST">
         <div class="field two-cols">
           <div class="col">
             <label for="fname" data-i18n="form.firstName">First Name</label>
-            <input id="fname" name="first_name" type="text" placeholder="John" required />
+            <input id="fname" name="first_name" type="text" required />
           </div>
           <div class="col">
             <label for="lname" data-i18n="form.lastName">Last Name</label>
-            <input id="lname" name="last_name" type="text" placeholder="Doe" required />
+            <input id="lname" name="last_name" type="text" required />
           </div>
         </div>
         <label for="email" data-i18n="form.email">Work Email</label>
-        <input id="email" name="email" type="email" placeholder="you@company.com" required />
+        <input id="email" name="email" type="email" required />
         <label for="message" data-i18n="form.message">Message</label>
-        <textarea id="message" name="message" rows="4" placeholder="Tell us what you need..." required></textarea>
+        <textarea id="message" name="message" rows="4" required></textarea>
         <div class="field">
           <button type="submit" class="btn btn-primary" id="sendBtn" data-i18n="form.send">Send Message</button>
         </div>
@@ -185,15 +260,17 @@
   <footer class="footer">
     <div class="container foot-grid">
       <div>
-        <p class="muted" data-i18n="footer.about">We provide professional services in networking, security solutions,
-          and website development.</p>
+        <p class="muted" data-i18n="footer.about">
+          We provide professional services in Networking & Cabling, Security Systems, Smart Home Automation,
+          IT Infrastructure, and IP Telephony — from design to installation to maintenance.
+        </p>
       </div>
       <div>
         <h4 data-i18n="footer.company">Company</h4>
         <ul class="links">
+          <li><a href="#about" data-i18n="nav.about">About</a></li>
           <li><a href="#services" data-i18n="nav.services">Services</a></li>
           <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
-          <li><a href="#testimonials" data-i18n="nav.testimonials">Testimonials</a></li>
         </ul>
       </div>
       <div>
@@ -207,11 +284,13 @@
       <div>
         <h4 data-i18n="footer.contact">Contact</h4>
         <ul class="links">
-          <li><a href="mailto:hello@CYNEX.agency">hello@CYNEX.agency</a></li>
+          <li><a href="mailto:info@cynex.pro">info@cynex.pro</a></li>
+          <li>+965 50503025</li>
+          <li>Al Saqran Tower, Hawally</li>
         </ul>
       </div>
     </div>
-    <div class="copy">© <span id="year"></span> Zain R. All rights reserved.</div>
+    <div class="copy">© <span id="year"></span> CYNEX. All rights reserved.</div>
   </footer>
 
   <script src="js/i18n.js"></script>

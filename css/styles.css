@@ -52,7 +52,38 @@ img {
   color: var(--muted);
 }
 
+/* ---------- Brand (CYNEX) Style ---------- */
+.brand-name {
+  color: var(--brand);
+  /* Yellow text */
+  text-shadow: 0 0 10px rgba(255, 212, 0, 0.8);
+  /* Yellow glow */
+  font-weight: 900;
+  /* Extra bold for emphasis */
+  font-size: 30px;
+}
+
 /* ---------- Buttons ---------- */
+/* CTA button in navbar */
+.navbar .cta-btn {
+  background: var(--brand);
+  color: #fff;
+  padding: 10px 20px;
+  /* space inside button */
+  border-radius: 50px;
+  /* rounded button */
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s;
+  white-space: nowrap;
+  /* prevent text from breaking into 2 lines */
+}
+
+.navbar .cta-btn:hover {
+  background: #ffcb05;
+  color: #000;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -97,24 +128,35 @@ img {
   border-bottom: 1px solid var(--stroke);
 }
 
+/* Navbar container */
 .nav-inner {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  height: 68px;
+  /* space between brand and links */
+  align-items: center;
+  /* vertically center items */
+  height: 70px;
+  /* fix consistent navbar height */
 }
 
+/* Logo image */
+.logo-mark {
+  height: 50px;
+  /* resize logo */
+  width: auto;
+  margin-right: 8px;
+  /* space between logo and brand text */
+}
+
+/* Brand (logo + text) */
 .brand {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-weight: 900;
-  letter-spacing: .3px;
-}
-
-.logo-mark {
-  width: 50px;
-  height: 50px;
+  /* align logo and text */
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
 }
 
 .nav-links {
@@ -207,6 +249,7 @@ img {
   font-weight: 900;
 }
 
+/* ---------- Stats ---------- */
 .stats {
   display: flex;
   gap: 26px;
@@ -260,7 +303,7 @@ img {
   }
 }
 
-/* ---------- Services Section ---------- */
+/* ---------- Section Wrapper ---------- */
 .section {
   padding: 70px 0;
 }
@@ -278,6 +321,88 @@ img {
   margin: 6px 0 14px;
 }
 
+/* ---------- About / Mission / Vision ---------- */
+#about,
+#mission,
+#vision {
+  margin-bottom: 40px;
+  /* بس مسافة بين الأقسام */
+}
+
+.info-box {
+  background: var(--panel);
+  border: 1px solid var(--stroke);
+  border-radius: var(--radius);
+  padding: 32px 24px;
+  box-shadow: var(--shadow);
+}
+
+.info-box h2 {
+  color: var(--brand);
+  font-size: 28px;
+  margin-bottom: 14px;
+}
+
+.info-box p {
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Mission & Vision grid */
+.mv-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+
+/* ---------- Why Choose Us ---------- */
+#why {
+  margin-bottom: 40px;
+}
+
+.why-box {
+  background: var(--panel);
+  border: 1px solid var(--stroke);
+  border-radius: var(--radius);
+  padding: 32px 24px;
+  box-shadow: var(--shadow);
+}
+
+#why h2 {
+  color: var(--brand);
+  font-size: 28px;
+  margin-bottom: 18px;
+}
+
+.why-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.why-list li {
+  background: #1a1b20;
+  border: 1px solid var(--stroke);
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-size: 15px;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.why-list li::before {
+  content: "✔";
+  color: var(--brand);
+  font-weight: bold;
+}
+
+/* ---------- Services Section ---------- */
 .cards {
   margin-top: 24px;
   display: grid;
@@ -400,30 +525,21 @@ blockquote {
 .cta-form .field {
   display: flex;
   justify-content: center;
-  /* center horizontally */
   margin-top: 10px;
 }
 
 .cta-form button {
   min-width: 160px;
-  /* optional: gives the button a nice width */
 }
 
 /* Style for the note under the button */
 .cta-form small {
   display: block;
-  /* make it take full line */
   margin-top: 12px;
-  /* space between button and note text */
   font-size: 13px;
-  /* smaller font size for note */
   color: var(--muted);
-  /* use muted color */
   text-align: center;
-  /* center align under the button */
 }
-
-
 
 /* Two-column layout for name fields */
 .field.two-cols {
@@ -506,6 +622,14 @@ label {
 
 /* ---------- Responsive ---------- */
 @media (max-width:1024px) {
+  .brand-name {
+    font-size: 25px;
+  }
+
+  .logo-mark {
+    height: 40px;
+  }
+
   .container {
     padding: 20px 32px;
   }
@@ -524,6 +648,54 @@ label {
 
   .foot-grid {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 820px) {
+  .brand-name {
+    font-size: 18px;
+  }
+
+  .logo-mark {
+    height: 30px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+    /* Smaller links */
+  }
+
+  .mv-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar .cta-btn {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .brand-name {
+    font-size: 16px;
+  }
+
+  .logo-mark {
+    height: 30px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    /* Smaller links */
+  }
+
+  .mv-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar .cta-btn {
+    padding: 8px 14px;
+    font-size: 13px;
   }
 }
 
@@ -576,8 +748,10 @@ label {
 }
 
 /* ---------- RTL Support ---------- */
-body.rtl {
-  direction: rtl;
+body.rtl .brand {
+  margin-right: 0;
+  margin-left: 40px;
+  /* keep spacing on RTL */
 }
 
 body.rtl .brand-name {
@@ -593,4 +767,110 @@ body.rtl .project-grid,
 body.rtl .cards,
 body.rtl .quotes {
   direction: rtl;
+}
+
+/* ---------- Custom Hover Effects ---------- */
+/* Card underline effect on hover */
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: var(--brand);
+  transition: width 0.3s ease;
+}
+
+.card:hover::after {
+  width: 100%;
+  /* Yellow underline expands on hover */
+}
+
+/* Button hover glow effects */
+.btn-primary:hover {
+  color: #fff;
+  /* Text turns white */
+  box-shadow: 0 0 15px rgba(255, 212, 0, 0.8);
+  /* Yellow glow */
+}
+
+.btn-ghost:hover {
+  color: var(--brand);
+  /* Text turns yellow */
+  box-shadow: 0 0 12px rgba(255, 212, 0, 0.7);
+  /* Yellow glow */
+  border-color: var(--brand);
+  /* Border turns yellow */
+}
+
+
+/* ---------- Custom Hover Fixes ---------- */
+
+/* Navbar Contact Us button */
+.navbar .cta-btn {
+  background: var(--brand);
+  color: #000;
+  /* Text black */
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.navbar .cta-btn:hover {
+  color: #fff;
+  /* Text white */
+  box-shadow: 0 0 15px rgba(255, 212, 0, 0.9);
+  /* Yellow glow */
+  background: var(--brand);
+}
+
+/* Cards hover full border glow */
+.card {
+  border: 1px solid var(--stroke);
+  transition: transform .25s ease, border-color .25s ease, box-shadow .3s ease;
+}
+
+.card:hover {
+  border-color: var(--brand);
+  /* Full border yellow */
+  box-shadow: 0 0 18px rgba(255, 212, 0, 0.6);
+  /* Yellow glow */
+  transform: translateY(-4px);
+}
+
+/* Contact form button (Send message) */
+.cta-form button {
+  font-size: 18px;
+  /* Bigger text */
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+}
+
+
+/* ---------- Navbar Enhancements ---------- */
+
+/* Make Contact Us bold */
+.navbar .cta-btn {
+  font-weight: 800;
+  /* Bold text */
+}
+
+/* Navbar links hover yellow + glow */
+.nav-links a:hover {
+  color: var(--brand);
+  /* Yellow text */
+  text-shadow: 0 0 8px rgba(255, 212, 0, 0.8);
+  /* Yellow glow */
 }
