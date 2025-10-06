@@ -521,6 +521,36 @@ body {
 /* ======= RESPONSIVE ====== */
 /* ========================= */
 
+/* ≤ 1024px (landscape tablets like iPad) */
+@media (max-width: 1180px) {
+
+    /* spacing & headings */
+    .section {
+        padding: 72px 0;
+    }
+
+    .section-title {
+        font-size: clamp(2rem, 4.6vw, 2.3rem);
+    }
+
+    /* contact becomes single column a bit earlier */
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    /* services: comfortable two columns and tighter gap */
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 26px;
+    }
+
+    /* equal closed-card height around this width */
+    :root {
+        --svc-card-h: clamp(110px, 13vw, 140px);
+    }
+}
+
 /* ≤ 992px (large tablets / small laptops) */
 @media (max-width: 992px) {
     .contact-grid {
