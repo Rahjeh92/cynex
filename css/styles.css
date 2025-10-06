@@ -545,6 +545,17 @@ body {
         gap: 26px;
     }
 
+    /* Security Systems card – monochrome background */
+    .services-grid .service-card:nth-child(1) {
+        /* background-image: url("/assets/images/svc_bg_security_gray.png"); */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+        /* keep text readable */
+    }
+
+
     /* equal closed-card height around this width */
     :root {
         --svc-card-h: clamp(110px, 13vw, 140px);
