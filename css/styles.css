@@ -288,6 +288,7 @@ body {
 }
 
 .service-card h3 {
+    text-align: center;
     color: var(--primary);
     margin-bottom: 10px;
 }
