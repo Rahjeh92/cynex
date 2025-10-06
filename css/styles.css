@@ -229,7 +229,10 @@ body {
 
 .btn-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(19, 130, 186, 0.5);
+    box-shadow: 0 6px 20px rgba(19, 130, 186, 0.5),
+        /* Glow */
+        0 0 15px var(--primary);
+    /* Stronger inner shadow */
 }
 
 
@@ -259,6 +262,15 @@ body {
     padding: 30px;
     transition: transform 0.4s, box-shadow 0.4s;
     transform-style: preserve-3d;
+}
+
+.service-card:hover {
+    border: 2px solid var(--primary);
+    /* Adds a blue border around the card */
+    box-shadow: 0 0 15px var(--primary);
+    /* Adds a glowing light effect around the card */
+    transform: scale(1.03);
+    /* Slightly scales up the card for a hover effect */
 }
 
 .service-card .card-content {
