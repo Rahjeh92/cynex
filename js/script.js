@@ -28,13 +28,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
             hamburger.setAttribute('aria-expanded', !isExpanded);
         });
-        
+
         // Close menu when a link is clicked
         navMenu.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
-                 hamburger.classList.remove('open');
-                 navMenu.classList.remove('open');
-                 hamburger.setAttribute('aria-expanded', 'false');
+                hamburger.classList.remove('open');
+                navMenu.classList.remove('open');
+                hamburger.setAttribute('aria-expanded', 'false');
             });
         });
     }
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 scale(1.03)
                 rotateX(${xRotation}deg)
                 rotateY(${yRotation}deg)`;
-            
+
             el.style.transform = string;
         });
 
@@ -135,16 +135,16 @@ document.addEventListener('DOMContentLoaded', () => {
         prevBtn.addEventListener('click', () => {
             showSlide(currentIndex - 1);
         });
-        
+
         // Keyboard navigation
         document.addEventListener('keydown', (e) => {
-           if(e.target.closest('.slider-container')) {
-               if (e.key === 'ArrowLeft') {
-                   prevBtn.click();
-               } else if (e.key === 'ArrowRight') {
-                   nextBtn.click();
-               }
-           }
+            if (e.target.closest('.slider-container')) {
+                if (e.key === 'ArrowLeft') {
+                    prevBtn.click();
+                } else if (e.key === 'ArrowRight') {
+                    nextBtn.click();
+                }
+            }
         });
     }
 

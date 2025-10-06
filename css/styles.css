@@ -2,15 +2,15 @@
 /* ======== VARIABLES ======== */
 /* ========================= */
 :root {
-    --primary:   #1382BA;
+    --primary: #1382BA;
     --secondary: #084C7A;
-    --accent:    #6A6A6A;
-    --bg:        #0F0F0F;
-    --dark:      #1B1B1B;
-    --light:     #FFFFFF;
+    --accent: #6A6A6A;
+    --bg: #0F0F0F;
+    --dark: #1B1B1B;
+    --light: #FFFFFF;
     --text-light: #E0E0E0;
     --text-dark: #B0B0B0;
-    
+
     --header-height: 70px;
     --border-radius: 8px;
     --transition-speed: 0.3s;
@@ -104,7 +104,7 @@ body {
 
 .logo img {
     display: block;
-    height: 35px;
+    height: 80px;
     width: auto;
 }
 
@@ -162,9 +162,11 @@ body {
 #hamburger.open .line:nth-child(1) {
     transform: translateY(7px) rotate(45deg);
 }
+
 #hamburger.open .line:nth-child(2) {
     opacity: 0;
 }
+
 #hamburger.open .line:nth-child(3) {
     transform: translateY(-7px) rotate(-45deg);
 }
@@ -275,12 +277,14 @@ body {
     gap: 30px;
     text-align: center;
 }
+
 .why-item .why-icon {
     width: 50px;
     height: 50px;
     color: var(--primary);
     margin-bottom: 15px;
 }
+
 .why-item h3 {
     color: var(--light);
     margin-bottom: 10px;
@@ -315,7 +319,7 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
     color: var(--light);
     padding: 40px 20px 20px;
 }
@@ -334,11 +338,18 @@ body {
     border-radius: 5px;
     transition: background-color var(--transition-speed);
 }
+
 .slider-btn:hover {
     background-color: var(--primary);
 }
-.slider-btn.prev { left: 10px; }
-.slider-btn.next { right: 10px; }
+
+.slider-btn.prev {
+    left: 10px;
+}
+
+.slider-btn.next {
+    right: 10px;
+}
 
 /* --- Testimonials --- */
 .testimonials-container {
@@ -346,12 +357,14 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
+
 .testimonial-card {
     background-color: var(--dark);
     padding: 25px;
     border-left: 4px solid var(--secondary);
     border-radius: var(--border-radius);
 }
+
 .testimonial-card footer {
     margin-top: 15px;
     font-style: italic;
@@ -365,6 +378,7 @@ body {
     gap: 50px;
     align-items: flex-start;
 }
+
 .contact-info p {
     margin-bottom: 15px;
     display: flex;
@@ -375,11 +389,13 @@ body {
 .form-group {
     margin-bottom: 20px;
 }
+
 .contact-form label {
     display: block;
     margin-bottom: 5px;
     color: var(--text-dark);
 }
+
 .contact-form input,
 .contact-form textarea {
     width: 100%;
@@ -389,11 +405,13 @@ body {
     border-radius: 5px;
     color: var(--text-light);
 }
+
 .contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
     border-color: var(--primary);
 }
+
 .contact-form .btn {
     border: none;
     cursor: pointer;
@@ -446,7 +464,7 @@ body {
         max-width: 300px;
         height: 100vh;
         background-color: var(--dark);
-        box-shadow: -5px 0 15px rgba(0,0,0,0.5);
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -456,7 +474,7 @@ body {
     #nav-menu.open {
         right: 0;
     }
-    
+
     #nav-menu ul {
         flex-direction: column;
         text-align: center;
