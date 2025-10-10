@@ -168,6 +168,41 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ===================================
+    // ===== CONTACT FORM (Formspree) ====
+    // ===================================
+    const form = document.getElementById("contactForm");
+    const status = document.getElementById("form-status");
+
+    if (form) {
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault(); // Prevent page reload
+
+            const data = new FormData(form);
+
+            try {
+                // Send form data to Formspree
+                const response = await fetch(form.action, {
+                    method: form.method,
+                    body: data,
+                    headers: { 'Accept': 'application/json' }
+                });
+
+                if (response.ok) {
+                    status.textContent = "✅ Your message has been sent successfully!";
+                    status.style.color = "limegreen";
+                    form.reset(); // Clear inputs after success
+                } else {
+                    status.textContent = "❌ Error sending your message. Please try again.";
+                    status.style.color = "red";
+                }
+            } catch (error) {
+                status.textContent = "⚠️ Network error. Please try again later.";
+                status.style.color = "orange";
+            }
+        });
+    }
+
+    // ===================================
     // =========== FOOTER YEAR ===========
     // ===================================
     const yearSpan = document.getElementById('current-year');

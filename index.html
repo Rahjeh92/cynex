@@ -329,26 +329,37 @@
                         <p>📧 info@cynex.pro</p>
                     </div>
 
-                    <!-- formspree.io -->
-                    <form class="contact-form" action="https://formspree.io/f/xldppbkn" method="POST">
+                    <!-- Contact Form Section -->
+                    <form id="contactForm" class="contact-form" action="https://formspree.io/f/xldppbkn" method="POST">
                         <h3>Send us a message</h3>
+
+                        <!-- Name input -->
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" required>
                         </div>
+
+                        <!-- Email input -->
                         <div class="form-group">
                             <label for="email">Email</label>
                             <input type="email" id="email" name="email" required>
                         </div>
+
+                        <!-- Message input -->
                         <div class="form-group">
                             <label for="message">Message</label>
                             <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
+
+                        <!-- Submit button -->
                         <button type="submit" class="button">
                             <div class="button-top">Submit</div>
                             <div class="button-bottom"></div>
                             <div class="button-base"></div>
                         </button>
+
+                        <!-- Status message will be shown here -->
+                        <p id="form-status"></p>
                     </form>
 
                     <!-- mailto -->
