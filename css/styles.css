@@ -682,7 +682,7 @@ form button {
 /* --- Contact --- */
 .contact-grid {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr;
     gap: 50px;
     align-items: flex-start;
 }
