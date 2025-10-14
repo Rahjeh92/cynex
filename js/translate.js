@@ -28,6 +28,11 @@ document.addEventListener("DOMContentLoaded", () => {
             document.documentElement.setAttribute("lang", lang);
             document.body.style.direction = dir;
 
+            // Toggle direction for list items specifically
+            document.querySelectorAll("li").forEach(li => {
+                li.style.textAlign = isArabic ? "right" : "left";
+            });
+
             // Update button label
             langBtn.textContent = isArabic ? "EN" : "AR";
 
