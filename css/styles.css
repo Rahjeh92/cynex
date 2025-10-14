@@ -1022,8 +1022,6 @@ form button {
     }
 
     .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 36px;
         max-width: 70%;
     }
 
@@ -1034,11 +1032,6 @@ form button {
 }
 
 @media (max-width: 992px) {
-    .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 32px;
-    }
-
     .services-grid {
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
         gap: 24px;
@@ -1094,8 +1087,6 @@ form button {
     }
 
     .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 32px;
         max-width: 100%;
     }
 
