@@ -771,6 +771,11 @@ form button {
     /* center text */
 }
 
+.contact-info h3 {
+    font-size: x-large;
+    padding-bottom: 10px;
+}
+
 .contact-info p {
     margin-bottom: 15px;
     /* spacing below paragraph */
@@ -780,6 +785,7 @@ form button {
     /* center items vertically */
     gap: 10px;
     /* space between icon and text */
+    font-size: large;
 }
 
 .form-group {
@@ -794,6 +800,10 @@ form button {
     /* shadow for form */
     border-radius: 12px;
     /* rounded corners */
+}
+
+.contact-form h3 {
+    font-size: x-large;
 }
 
 .contact-form label {
